@@ -3,6 +3,13 @@ h1 {
   text-align: center;
 }
 
+#canvas {
+  display: flex;
+  z-index: 0;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
 #greeting-card {
   display: flex;
   justify-content: space-around;
@@ -14,4 +21,27 @@ h1 {
   position: absolute;
   top: 10%;
   left: 15%;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  #canvas {
+    display: none;
+  }
+  #greetings {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
 }
