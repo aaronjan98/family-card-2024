@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Merry Christmas e-Card</title>
+
+    <link
+      rel="stylesheet"
+      href="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/css/reset.css"
+    />
+
+    <!-- SCC style for card -->
+    <link
+      rel="stylesheet"
+      href="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/css/style.css"
+    />
+
+    <!-- Add a stylesheet link to request the desired web font -->
+    <link
+      href="//fonts.googleapis.com/css?family=Clicker+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--link href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps'	rel='stylesheet' type='text/css'-->
+
+    <!-- JavaScript libraries -->
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/js/paper-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/js/jquery-1.8.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/js/jquery.fullscreen.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/js/eCard.min.js"
+    ></script>
+
+		<
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="greeting_card" style="display: block; overflow: hidden">
+      <canvas id="canvas" resize></canvas>
+      <div id="greetings">
+        <h1>Merry Christmas Everyone!</h1>
+        <br />
+        <img src="Janovitch-Family-2024.jpg" alt="Janovitch Family 2024 Photo" width="500" >
+				<br />
+        <h2>With love,</h2>
+				<h2>Aaron, Michelle, & Dennis<h2>
+        <br />
+      </div>
+
+      <audio id="audio">
+        <source
+          src="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/sound/jingle-bells-slow-mix.mp3"
+          type="audio/mpeg"
+        />
+        <source
+          src="https://s3.amazonaws.com/anatolfiles/envato/christmas_card/sound/jingle-bells-slow-mix.ogg"
+          type="audio/ogg"
+        />
+      </audio>
+
+      <div id="bt">
+        <div id="bt_fullscreen"></div>
+        <div id="bt_sound"></div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      jQuery(function ($) {
+        $("#canvas").eCard();
+      });
+    });
+  </script>
+</html>

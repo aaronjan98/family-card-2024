@@ -1,0 +1,17 @@
+h1 {
+  line-height: 1;
+  text-align: center;
+}
+
+#greeting-card {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+#greetings {
+  width: fit-content;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
